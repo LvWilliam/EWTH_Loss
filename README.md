@@ -48,16 +48,6 @@ The pre-trained ResNet50 model will be downloaded to the specified locations in 
 ## Results
 In AGW+HNTH, $\phi=0.1$ and in AGW+EWTH, $\alpha=0.2$.
 All the other margins are default values 0.3.
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
   <tr>
     <th class="tg-c3ow" rowspan="2">Method</th>
     <th class="tg-c3ow" colspan="2">Market1501</th>
