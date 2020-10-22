@@ -44,7 +44,7 @@ See [README of BoT](https://github.com/michuanhaohao/reid-strong-baseline/blob/m
 The pre-trained ResNet50 model will be downloaded to the specified locations in  BoT and AGW. See [README of BoT](https://github.com/michuanhaohao/reid-strong-baseline/blob/master/README.md) and [README of AGW](https://github.com/mangye16/ReID-Survey/blob/master/README.md) for further informations.
 
 ## Results
-In AGW+HNTH, $\phi=0.1$ and in AGW+EWTH, $\alpha=0.2$.
+In AGW+HNTH, $\alpha_1=0.1$ and in AGW+EWTH, $\alpha_2=0.2$.
 All the other margins are default values 0.3.
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -59,10 +59,10 @@ All the other margins are default values 0.3.
   <tr>
     <th class="tg-c3ow" rowspan="2">Method</th>
     <th class="tg-c3ow" colspan="2">Market1501</th>
-    <th class="tg-c3ow" colspan="2">DukeMTMC-reID</th>
+    <th class="tg-c3ow" colspan="2">MSMT17</th>
     <th class="tg-c3ow" rowspan="2">Method</th>
     <th class="tg-c3ow" colspan="2">Market1501</th>
-    <th class="tg-c3ow" colspan="2">DukeMTMC-ReID</th>
+    <th class="tg-c3ow" colspan="2">MSMT17</th>
   </tr>
   <tr>
     <td class="tg-c3ow">mAP</td>
@@ -78,99 +78,63 @@ All the other margins are default values 0.3.
 <tbody>
   <tr>
     <td class="tg-c3ow">BoT+TH</td>
-    <td class="tg-c3ow">85.60%</td>
-    <td class="tg-c3ow">94.10%</td>
-    <td class="tg-c3ow">75.80%</td>
-    <td class="tg-c3ow">86.10%</td>
-    <td class="tg-c3ow">BoT+HNEWTH</td>
-    <td class="tg-c3ow">86.70%</td>
-    <td class="tg-c3ow">94.90%</td>
-    <td class="tg-c3ow">76.50%</td>
-    <td class="tg-c3ow">86.80%</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">BoT+TH+FN</td>
-    <td class="tg-c3ow">86.30%</td>
-    <td class="tg-c3ow">94.10%</td>
-    <td class="tg-c3ow">76.70%</td>
-    <td class="tg-c3ow">86.80%</td>
-    <td class="tg-c3ow">BoT+NEWTH</td>
-    <td class="tg-c3ow">86.90%</td>
-    <td class="tg-c3ow">94.60%</td>
-    <td class="tg-c3ow">76.80%</td>
-    <td class="tg-c3ow">87.40%</td>
+    <td class="tg-c3ow">85.6%</td>
+    <td class="tg-c3ow">94.1%</td>
+    <td class="tg-c3ow">45.1%</td>
+    <td class="tg-c3ow">63.9%</td>
+    <td class="tg-c3ow">AGW+TH</td>
+    <td class="tg-c3ow">87.7%</td>
+    <td class="tg-c3ow">95.0%</td>
+    <td class="tg-c3ow">48.4%</td>
+    <td class="tg-c3ow">67.9%</td>
   </tr>
   <tr>
     <td class="tg-c3ow">BoT+HTH</td>
-    <td class="tg-c3ow">86.60%</td>
-    <td class="tg-c3ow">94.60%</td>
-    <td class="tg-c3ow">77.10%</td>
-    <td class="tg-c3ow">87.70%</td>
-    <td class="tg-c3ow">BoT+HEWTH</td>
-    <td class="tg-c3ow">87.70%</td>
-    <td class="tg-c3ow">95.00%</td>
-    <td class="tg-c3ow">77.80%</td>
-    <td class="tg-c3ow">88.40%</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">BoT+HNTH</td>
-    <td class="tg-c3ow">87.30%</td>
-    <td class="tg-c3ow">94.90%</td>
-    <td class="tg-c3ow">77.80%</td>
-    <td class="tg-c3ow">87.60%</td>
-    <td class="tg-c3ow">BoT+HNEWTH</td>
-    <td class="tg-c3ow">88.40%</td>
-    <td class="tg-c3ow">95.10%</td>
-    <td class="tg-c3ow">78.80%</td>
-    <td class="tg-c3ow">88.60%</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">AGW+TH</td>
-    <td class="tg-c3ow">87.70%</td>
-    <td class="tg-c3ow">95.00%</td>
-    <td class="tg-c3ow">78.20%</td>
-    <td class="tg-c3ow">88.30%</td>
-    <td class="tg-c3ow">AGW+EWTH</td>
-    <td class="tg-c3ow">87.70%</td>
-    <td class="tg-c3ow">95.30%</td>
-    <td class="tg-c3ow">78.50%</td>
-    <td class="tg-c3ow">88.70%</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">AGW+TH+FN</td>
-    <td class="tg-c3ow">88.00%</td>
-    <td class="tg-c3ow">95.10%</td>
-    <td class="tg-c3ow">78.60%</td>
-    <td class="tg-c3ow">88.60%</td>
-    <td class="tg-c3ow">AGW+NEWTH</td>
-    <td class="tg-c3ow">87.70%</td>
-    <td class="tg-c3ow">95.00%</td>
-    <td class="tg-c3ow">78.50%</td>
-    <td class="tg-c3ow">88.40%</td>
-  </tr>
-  <tr>
+    <td class="tg-c3ow">86.6%</td>
+    <td class="tg-c3ow">94.6%</td>
+    <td class="tg-c3ow">45.0%</td>
+    <td class="tg-c3ow">63.9%</td>
     <td class="tg-c3ow">AGW+HTH</td>
-    <td class="tg-c3ow">88.10%</td>
-    <td class="tg-c3ow">95.40%</td>
-    <td class="tg-c3ow">78.50%</td>
-    <td class="tg-c3ow">88.30%</td>
-    <td class="tg-c3ow">AGW+HEWTH</td>
-    <td class="tg-c3ow">88.50%</td>
-    <td class="tg-c3ow">95.40%</td>
-    <td class="tg-c3ow">78.90%</td>
-    <td class="tg-c3ow">89.70%</td>
+    <td class="tg-c3ow">88.1%</td>
+    <td class="tg-c3ow">95.4%</td>
+    <td class="tg-c3ow">48.1%</td>
+    <td class="tg-c3ow">67.6%</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">AGW+HNTH</td>
-    <td class="tg-c3ow">88.10%</td>
-    <td class="tg-c3ow">95.60%</td>
-    <td class="tg-c3ow">79.70%</td>
-    <td class="tg-c3ow">89.30%</td>
-    <td class="tg-c3ow">AGW+HNEWTH</td>
-    <td class="tg-c3ow">89.40%</td>
-    <td class="tg-c3ow">95.60%</td>
-    <td class="tg-c3ow">80.50%</td>
-    <td class="tg-c3ow">90.50%</td>
+    <td class="tg-c3ow">BoT+EWTH</td>
+    <td class="tg-c3ow">87.7%</td>
+    <td class="tg-c3ow">95.0%</td>
+    <td class="tg-c3ow">48.7%</td>
+    <td class="tg-c3ow">67.8%</td>
+    <td class="tg-c3ow">AGW+EWTH</td>
+    <td class="tg-c3ow">88.5%</td>
+    <td class="tg-c3ow">95.4%</td>
+    <td class="tg-c3ow">50.4%</td>
+    <td class="tg-c3ow">69.6%</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">BoT+NEWTH</td>
+    <td class="tg-c3ow">88.4%</td>
+    <td class="tg-c3ow">95.1%</td>
+    <td class="tg-c3ow">49.7%</td>
+    <td class="tg-c3ow">68.1%</td>
+    <td class="tg-c3ow">AGW+NEWTH</td>
+    <td class="tg-c3ow">89.4%</td>
+    <td class="tg-c3ow">95.6%</td>
+    <td class="tg-c3ow">53.1%</td>
+    <td class="tg-c3ow">71.5%</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">BoT+TH+FN</td>
+    <td class="tg-c3ow">86.3%</td>
+    <td class="tg-c3ow">94.1%</td>
+    <td class="tg-c3ow">45.2%</td>
+    <td class="tg-c3ow">63.8%</td>
+    <td class="tg-c3ow">AGW+TH+FN</td>
+    <td class="tg-c3ow">88.0%</td>
+    <td class="tg-c3ow">95.1%</td>
+    <td class="tg-c3ow">47.7%</td>
+    <td class="tg-c3ow">66.3%</td>
   </tr>
 </tbody>
 </table>
